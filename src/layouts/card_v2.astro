@@ -1,0 +1,19 @@
+---
+import yummy from '../../public/yummy.json'
+---
+  {
+    yummy.map((frituras) => (
+        <div  class="card style">
+            <h2 class="card style">{frituras.name}</h2>
+            
+            <img class="card" src={"/img/YUMMIES/"+frituras.fileName} alt={frituras.name}>
+            
+            <ul class="card style">
+                <li class="card">credex</li>
+                <li class="card">logo</li>
+                <li class="card">whatsapp</li>
+            </ul>
+            <span class="card">${frituras.numero}</span>
+        </div>
+    ))
+  }
